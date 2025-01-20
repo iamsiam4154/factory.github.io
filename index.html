@@ -7,9 +7,8 @@
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
-  <model-viewer src="model.glb" alt="An architectural model"
-                auto-rotate camera-controls autoplay>
- 
+<model-viewer src="model.glb" ar ar-scale="fixed" camera-controls touch-action="pan-y" alt="A 3D model of an astronaut" shadow-intensity="2" max-camera-orbit="auto 90deg auto" xr-environment></model-viewer>
+  
   <button slot="ar-button" id="ar-button">
     View in your space
   </button>
@@ -21,6 +20,5 @@
   <button id="ar-failure">
     AR is not tracking!
   </button>
- </model-viewer>
 </body>
 </html>
