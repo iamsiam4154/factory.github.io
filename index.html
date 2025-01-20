@@ -12,7 +12,6 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      background-color: #f0f0f0;
     }
     model-viewer {
       width: 80%;
@@ -23,6 +22,18 @@
 <body>
   <model-viewer src="model.glb" alt="An architectural model"
                 auto-rotate camera-controls autoplay>
-  </model-viewer>
+ 
+  <button slot="ar-button" id="ar-button">
+    View in your space
+  </button>
+
+  <div id="ar-prompt">
+    <img src="../../assets/hand.png">
+  </div>
+
+  <button id="ar-failure">
+    AR is not tracking!
+  </button>
+ </model-viewer>
 </body>
 </html>
